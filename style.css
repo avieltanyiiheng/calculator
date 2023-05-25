@@ -1,0 +1,157 @@
+body {
+  font-family: "Open Sans";
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to right, #decba4, #3e5151);
+}
+
+.calculator {
+  border-style: solid;
+  width: 400px;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.bigscreen {
+  border-style: solid;
+  height: 100px;
+  margin-bottom: 16px;
+  border-radius: 16px;
+  padding: 16px;
+  background-color: #f6f6f6;
+}
+
+.currentOperand {
+  justify-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+}
+.screen {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 48px;
+}
+
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.number {
+  border-style: solid;
+  height: auto;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  align-items: center;
+  background-color: #f6f6f6;
+}
+
+.number:hover {
+  background-color: #dddddd;
+}
+
+.number:active {
+  background-color: #eeeeee00;
+}
+
+.operand:hover {
+  background-color: #dddddd;
+}
+
+.operand:active {
+  background-color: #eeeeee00;
+}
+
+.operand {
+  border-style: solid;
+  height: auto;
+  border-radius: 8px;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  background-color: #f6f6f6;
+}
+
+.operand.clear {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.operand.delete {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+
+.equal {
+  border-style: solid;
+  height: auto;
+  border-radius: 8px;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  background-color: #f6f6f6;
+}
+.equal:hover {
+  background-color: #dddddd;
+}
+
+.equal:active {
+  background-color: #eeeeee00;
+}
+
+.decimal {
+  border-style: solid;
+  height: auto;
+  border-radius: 8px;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  background-color: #f6f6f6;
+}
+.decimal:hover {
+  background-color: #dddddd;
+}
+
+.decimal:active {
+  background-color: #eeeeee00;
+}
+
+.clear {
+  border-style: solid;
+  height: auto;
+  border-radius: 8px;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  background-color: #f6f6f6;
+}
+.clear:hover {
+  background-color: #dddddd;
+}
+
+.clear:active {
+  background-color: #eeeeee00;
+}
+
+.delete {
+  border-style: solid;
+  height: auto;
+  border-radius: 8px;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  background-color: #f6f6f6;
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+.delete:hover {
+  background-color: #dddddd;
+}
+
+.delete:active {
+  background-color: #eeeeee00;
+}
